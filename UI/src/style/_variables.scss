@@ -1,8 +1,8 @@
-$bannerBg: #ffffff;
-$primaryColor: #aec6f3;
-$secondaryColor: #ff3c00;
-$font-color: #ffffff;
+$primaryColor: #3b0400;
+$font-color: lighten($primaryColor, 90%);
 
 $font-family: "Montserrat", sans-serif;
 $normal-weight: 300;
 $bold-weight: 700;
+
+$gutter: 2%;

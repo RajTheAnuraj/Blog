@@ -6,30 +6,28 @@ export function Header() {
   return (
     <header>
       <a href="/">
-        <img
+        {/* <img
           src={Logo}
           width="30"
           height="30"
           className="d-inline-block align-top"
           alt="Anuraj Ajithkumar"
-        />
-        <span>Anuraj Ajithkumar</span>
+        /> */}
+        <h1>Anuraj Ajithkumar</h1>
       </a>
       <nav className="clearFix">
-        <div>
-          <ul>
-            <li>
-              <NavLink to="/blog" activeClassName="active" className="nav-link">
-                Blog
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/work" activeClassName="active" className="nav-link">
-                Work
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <NavLink to="/blog" activeClassName="active">
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/work" activeClassName="active">
+              Work
+            </NavLink>
+          </li>
+        </ul>
       </nav>
     </header>
   );

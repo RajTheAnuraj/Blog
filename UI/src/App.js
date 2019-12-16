@@ -10,10 +10,12 @@ export function App() {
   return (
     <>
       <Header />
-      <Switch>
-        <Route path="/" exact component={HomePage}></Route>
-        <Route component={BadRoutePage}></Route>
-      </Switch>
+      <div id="wrapper">
+        <Switch>
+          <Route path="/" exact component={HomePage}></Route>
+          <Route component={BadRoutePage}></Route>
+        </Switch>
+      </div>
       <Footer />
     </>
   );

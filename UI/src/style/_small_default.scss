@@ -10,8 +10,9 @@ html {
 }
 
 header {
-  background-color: $bannerBg;
-  margin: 0.3rem 0;
+  background-color: $primaryColor;
+  margin: 0 0;
+  padding-top: 0.5rem;
 
   a {
     text-decoration: none;
@@ -20,12 +21,12 @@ header {
     text-align: center;
   }
 
-  a span {
-    font-weight: $bold-weight;
+  a h1 {
+    font-family: "Permanent Marker", cursive;
     font-size: 1.5rem;
     white-space: nowrap;
-    margin: 0 1rem;
-    color: $primaryColor;
+    margin: 0.1rem 0;
+    color: $font-color;
   }
 
   nav {
@@ -35,11 +36,11 @@ header {
     ul li {
       float: left;
       width: 50%;
-      border-right: 2px solid rgba(0, 0, 0, 0.3);
+      //   border-right: 2px solid rgba(0, 0, 0, 0.3);
     }
 
     ul li:last-child {
-      border-right: none;
+      //border-right: none;
     }
 
     ul li a {
@@ -60,6 +61,108 @@ header {
     ul li a.active {
       background-color: darken($primaryColor, 20%);
       color: darken($font-color, 30%);
+    }
+  }
+}
+
+main {
+  h1 {
+    font-size: 2rem;
+    font-weight: $bold-weight;
+    padding: 1rem 2rem;
+    color: $primaryColor;
+  }
+
+  figure.banner {
+    width: 100%;
+  }
+
+  figure.banner img {
+    width: 100%;
+  }
+
+  hr.fadeAway {
+    border: none;
+    height: 2px;
+    margin: 0 2%;
+    background: rgb(23, 65, 90);
+    background: linear-gradient(
+      90deg,
+      rgba(23, 65, 90, 1) 0%,
+      rgba(23, 65, 90, 0) 100%
+    );
+  }
+}
+
+div.aboutme {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: $bold-weight;
+    padding: 1rem 2rem;
+    color: lighten($primaryColor, 20%);
+  }
+  blockquote {
+    padding-left: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    background-color: #dadada;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 5px;
+
+    background-position: middle left;
+    background-repeat: no-repeat;
+    text-indent: 23px;
+
+    div {
+      font-style: italic;
+    }
+  }
+
+  article {
+    margin: 1rem $gutter;
+    width: 100%- (2 * $gutter);
+
+    h3 {
+      font-weight: $bold-weight;
+      color: lighten($primaryColor, 30%);
+    }
+
+    figure {
+      width: 100%;
+    }
+    figure img {
+      width: 100%;
+    }
+    figcaption {
+      color: lighten($primaryColor, 35%);
+      font-style: italic;
+      font-size: 0.6rem;
+      text-align: right;
+      margin-top: 0.2rem;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: $primaryColor;
+  height: 5rem;
+
+  div {
+    div {
+      color: lighten($primaryColor, 100%);
+      font-size: 0.7em;
+    }
+    padding: 0.1rem 0;
+    text-align: center;
+
+    a img {
+      width: 2rem;
+      margin-right: 2rem;
+      margin-top: 0.3rem;
+      box-shadow: 0 0 10px lighten($primaryColor, 60%);
     }
   }
 }

@@ -1,0 +1,53 @@
+body {
+  background-color: #ffffff;
+}
+
+div#wrapper {
+  max-width: 100%- (2 * $gutter);
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+header {
+  a {
+    text-align: left;
+  }
+
+  a h1 {
+    font-size: 2rem;
+    margin: 0.1rem (2 * $gutter);
+  }
+
+  nav {
+    ul {
+      width: auto;
+      margin: 0 $gutter;
+    }
+
+    ul li {
+      width: auto;
+    }
+
+    ul li:nth-child(1) {
+      //border-left: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+      //border-right: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul li a {
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+main {
+  div.aboutme {
+    article {
+      margin: 1rem $gutter;
+      width: 50%- (2 * $gutter);
+      float: left;
+    }
+  }
+}
