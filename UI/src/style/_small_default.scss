@@ -1,0 +1,65 @@
+html {
+  font-family: $font-family;
+  font-size: 16px;
+}
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: $bannerBg;
+  margin: 0.3rem 0;
+
+  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  a span {
+    font-weight: $bold-weight;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    margin: 0 1rem;
+    color: $primaryColor;
+  }
+
+  nav {
+    background-color: $primaryColor;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+    ul li {
+      float: left;
+      width: 50%;
+      border-right: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+      border-right: none;
+    }
+
+    ul li a {
+      text-decoration: none;
+      text-align: center;
+      color: $font-color;
+      display: block;
+      padding: 0.5rem 0;
+      font-weight: $bold-weight;
+      transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    ul li a:hover {
+      background-color: darken($primaryColor, 10%);
+      color: darken($font-color, 20%);
+    }
+
+    ul li a.active {
+      background-color: darken($primaryColor, 20%);
+      color: darken($font-color, 30%);
+    }
+  }
+}
